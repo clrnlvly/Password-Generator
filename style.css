@@ -26,18 +26,18 @@ body {
 
 .container {
     background-color: #fff;
-    padding: 2.5rem;
+    padding: 1.8rem;
     border-radius: 1rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    width: 90%;
-    max-width: 450px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 400px;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
     color: var(--primary-color);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     position: relative;
     padding-bottom: 0.5rem;
@@ -56,7 +56,7 @@ h1::after{
 }
 
 .password-container {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     background-color: #f8fafc;
     border-radius: 10px;
     border: 1px solid #e2e8f0;
@@ -65,27 +65,28 @@ h1::after{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem 0 0;
+    padding: 0 0.8rem 0 0;
 }
 
 #password {
     width: 100%;
-    padding: 1.1rem;
-    padding-right: 50px;
+    padding: 0.9rem;
+    padding-right: 40px;
     border: none;
     background: transparent;
     color: #4a5568;
     letter-spacing: 1px;
     outline: none;
     border-radius: 10px;
+    font-size: 0.95rem;
 }
 
 #copy-btn {
     cursor: pointer;
     color: #718096;
-    font-size: 1.1rem;
-    width: 35px;
-    height: 35px;
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,9 +98,9 @@ h1::after{
 }
 
 .options {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     background-color: #f8fafc;
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -116,7 +117,7 @@ h1::after{
 }
 
 .option label {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #4a5568;
     font-weight: 500;
 }
@@ -124,20 +125,20 @@ h1::after{
 .range-container {
     display: flex;
     align-items: center;
-    gap: 10px;
-    width: 60%;
+    width: 65%;
+    gap: 8px;
 }
 
 input[type="range"] {
     accent-color: var(--primary-color);
-    height: 5px;
+    height: 4px;
     cursor: pointer;
     flex: 1;
 }
 
 input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border: 2px solid var(--primary-color);
     appearance: none;
     border-radius: 4px;
@@ -158,7 +159,7 @@ input[type="checkbox"]:checked::after {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 12px;
+    font-size: 10px;
 }
 
 #length-value {
@@ -168,12 +169,87 @@ input[type="checkbox"]:checked::after {
     text-align: center;
     background: #e2e8f0;
     border-radius: 4px;
-    padding: 2px 5px;
+    font-size: 0.85rem;
+    padding: 1px 4px;
 }
 
 button {
     width: 100%;
-    padding: 1rem;
+    padding: 0.85rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 4px 8px rgba(43, 88, 118, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.strength-container {
+    margin-top: 0.8rem;
+}
+
+.strength-container p {
+    font-size: 0.85rem;
+    color: #4a5568;
+    margin-bottom: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+#strength-label {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.strength-meter {
+    height: 8px;
+    background-color: #edf2f7;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    min-width: 5%;
+    background-color: var(--weak-color);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        /* max-width: 95%; */
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .option label {
+        font-size: 0.8rem;
+    }
+
+     button {
+        font-size: 0.9rem;
+    }
 }
 
 
