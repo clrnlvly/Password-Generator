@@ -5,6 +5,7 @@ A simple password generator built with **HTML**, **CSS**, and **JavaScript**. Cu
 ## 🔗 Live Demo  
 [🔗 View on GitHub Pages](https://clrnlvly.github.io/Password-Generator/)
 
+## Youtube: https://youtu.be/msnw1JclyTg
 ---
 
 ## ✨ Features
